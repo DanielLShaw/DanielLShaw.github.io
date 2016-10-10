@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
+
+        <link rel="stylesheet" href="./resources/css/body.css">
+
+        <title>Daniel Shaw - Portfolio</title>
+    </head>
+
+    <body class='body-container'>
+        <div class='index-container'>
+     
+            <div ng-app="portfolioApp" >
+                <div ng-include src="'./common/header.html'"></div>
+                <div ng-view layout-padding></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src='./node_modules/angular/angular.js'></script>
+        <script type="text/javascript" src='./node_modules/angular-route/angular-route.js'></script>
+        <script type="text/javascript" src="./node_modules/angular-material/angular-material.js"></script>
+        <script type="text/javascript" src="./node_modules/angular-animate/angular-animate.js"></script>
+                <script type="text/javascript" src="./node_modules/angular-aria/angular-aria.js"></script>
+
+        <script type="text/javascript" src='app.js'></script>
+        
+        <script type="text/javascript" src='controllers/home.controller.js'></script>
+        <script type="text/javascript" src='controllers/contact.controller.js'></script>
+        <script type="text/javascript" src='controllers/projects.controller.js'></script>
+        
+ 
+    </body>
+</html>
