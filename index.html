@@ -1,49 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<head>
+        <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <link rel="stylesheet" href="./resources/css/body.css">
 
-    <title>Grumpy Llama</title>
+        <title>Daniel Shaw - Portfolio</title>
+    </head>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <body class='body-container'>
+        <div class='index-container'>
+     
+            <div ng-app="portfolioApp" >
+                <div ng-include src="'./common/header.html'"></div>
+                <div ng-view layout-padding></div>
+            </div>
+        </div>
 
-    <!-- Custom CSS -->
-      <link href="resources/css/footer.css" rel="stylesheet">
+        <script type="text/javascript" src='./node_modules/angular/angular.js'></script>
+        <script type="text/javascript" src='./node_modules/angular-route/angular-route.js'></script>
+        <script type="text/javascript" src="./node_modules/angular-material/angular-material.js"></script>
+        <script type="text/javascript" src="./node_modules/angular-animate/angular-animate.js"></script>
+                <script type="text/javascript" src="./node_modules/angular-aria/angular-aria.js"></script>
 
-
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-
-    <!-- jQuery -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-    <script src="app.module.js"></script>
-    <script src="apps/home/homeController.js"></script>
-    <script src="apps/mim/mimController.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body ng-app="homeApp">
-
-      <div ng-view></div>
-
-</body>
-
+        <script type="text/javascript" src='app.js'></script>
+        
+        <script type="text/javascript" src='controllers/home.controller.js'></script>
+        <script type="text/javascript" src='controllers/contact.controller.js'></script>
+        <script type="text/javascript" src='controllers/projects.controller.js'></script>
+        
+ 
+    </body>
 </html>
