@@ -1,13 +1,16 @@
 .summary-image{
-    background-color:red;
+    background-color:green;
+    background-image:url('../images/test.png');
     height:50%; 
 }
 
 .about-me-image{
-    background-color:darkorange;
+    background-color:red;
+    background-image:url('../images/test2.png');
     height:30%; 
 }
 .about-me-image-after{
-    background-color:orange;
+    background-color:blue;
+    background-image:url('../images/test3.png');
     height:100%; 
 }
