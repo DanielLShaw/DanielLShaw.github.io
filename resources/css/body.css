@@ -2,9 +2,26 @@ html,body{
     height:100%
 }
 
+.app-container{
+    height:100%;
+}
+
 @media (min-width:769px){
-    .main-container{
+    .app-container{
         max-width:60%;
         margin:0 auto;
     }
 }
+
+.content-container{
+    height:100%;
+}
+
+.parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+

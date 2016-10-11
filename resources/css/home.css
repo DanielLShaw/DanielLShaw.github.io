@@ -1,0 +1,13 @@
+.summary-image{
+    background-color:red;
+    height:50%; 
+}
+
+.about-me-image{
+    background-color:darkorange;
+    height:30%; 
+}
+.about-me-image-after{
+    background-color:orange;
+    height:100%; 
+}

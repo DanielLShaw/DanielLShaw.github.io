@@ -6,6 +6,7 @@ var controller = app.controller('homeController',['$scope',function($scope){
 
 }])
 
+app.directive('scrollFade',['$window',function($window){
     function link(scope,element,attrs){
         var window = angular.element($window)
         window.on('scroll', function() {

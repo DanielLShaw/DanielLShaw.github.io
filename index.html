@@ -19,12 +19,10 @@
     </head>
 
     <body>
-        <div>
-            <div ng-app="portfolioApp" class='main-container'>
+            <div ng-app="portfolioApp" class='app-container'>
                 <div ng-controller='headerController as headerCtrl' ng-include src="'./common/header.html'"></div>
-                <div ng-view layout-padding></div>
+                <div ng-view layout-padding class='content-container' ></div>
             </div>
-        </div>
 
         <script type="text/javascript" src='./node_modules/angular/angular.js'></script>
         <script type="text/javascript" src='./node_modules/angular-route/angular-route.js'></script>
