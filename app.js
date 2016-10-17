@@ -14,9 +14,33 @@ portfolioApp.config(['$routeProvider',function($routeProvider){
       templateUrl:"pages/contact/contact.html",
       controller:"contactController"
     })
+    .when('/credits',{
+      templateUrl:"pages/credits/credits.html",
+      controller:"creditsController"
+    })
     .otherwise({redirectTo: '/home'});
 }
 ]);
+
+portfolioApp.directive('header', function () {
+    return {
+        restrict: 'A',
+        replace: true,
+         scope:true,
+        templateUrl: "./common/header.html",
+        controller: 'headerController'
+    }
+});
+
+portfolioApp.directive('footer', function () {
+    return {
+        restrict: 'A',
+        replace: true,
+        scope:true,
+        templateUrl: "./common/footer.html",
+        controller: 'footerController'
+    }
+});
 
 portfolioApp.config(function($mdThemingProvider) {
   $mdThemingProvider
