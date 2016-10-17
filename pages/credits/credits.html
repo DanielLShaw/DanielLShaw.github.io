@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="../../resources/css/credit.css">
+<div class="footer">
+        <h1>Credits</h1>
+        <div layout ng-repeat='credit in credits'>
+            <a class='credit-url' href="{{credit.url}}" >{{credit.owner}} </a>
+            <p class='credit-text'>- {{credit.text}}</p>
+        </div>
+</div>
+       

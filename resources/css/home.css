@@ -1,16 +1,40 @@
 .summary-image{
     background-color:green;
     background-image:url('../images/test.png');
-    height:50%; 
+    min-height:400px; 
+
 }
 
 .about-me-image{
     background-color:red;
     background-image:url('../images/test2.png');
-    height:30%; 
+    min-height:300px; 
 }
 .about-me-image-after{
     background-color:blue;
     background-image:url('../images/test3.png');
-    height:100%; 
+        min-height:300px; 
+}
+
+.tagline-container{
+    height:100%;
+}
+
+.title{
+    font-size:xx-large;
+    font-family: 'Taviraj', serif;
+}
+
+.subtitle{
+    font-size:small;
+    font-family: 'Taviraj', serif;
+}
+
+.text{
+    font-size:small;
+    font-family: 'Raleway', serif;
+}
+
+.content-container{
+    height:100%;
 }
