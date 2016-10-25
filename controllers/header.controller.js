@@ -3,6 +3,8 @@ var app = angular.module('portfolioApp')
 var controller = app.controller('headerController',['$scope',function($scope){
  console.log('LOADED: headerController');
 
+ $scope.showMobileMenu = false;
+
  $scope.links = [
      {
          url:'#home',
@@ -17,10 +19,4 @@ var controller = app.controller('headerController',['$scope',function($scope){
          text:'Contact'
      }
  ]
-
-    this.openMenu = function($mdOpenMenu, ev) {
-      originatorEv = ev;
-      $mdOpenMenu(ev);
-    };
-
 }])
