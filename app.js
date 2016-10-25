@@ -22,6 +22,15 @@ portfolioApp.config(['$routeProvider',function($routeProvider){
 }
 ]);
 
+portfolioApp.config(function($mdThemingProvider) {
+  $mdThemingProvider
+    .theme('autumn','default')
+    .primaryPalette('amber')
+    .accentPalette('brown')
+    .warnPalette('red')
+    .backgroundPalette('grey');
+});
+
 portfolioApp.directive('header', function () {
     return {
         restrict: 'A',
@@ -42,11 +51,3 @@ portfolioApp.directive('footer', function () {
     }
 });
 
-portfolioApp.config(function($mdThemingProvider) {
-  $mdThemingProvider
-    .theme('default')
-    .primaryPalette('amber')
-    .accentPalette('brown')
-    .warnPalette('red')
-    .backgroundPalette('grey');
-});

@@ -1,19 +1,6 @@
-.summary-image{
-    background-color:green;
+.bio-image{
     background-image:url('../images/test.png');
-    min-height:400px; 
-
-}
-
-.about-me-image{
-    background-color:red;
-    background-image:url('../images/test2.png');
-    min-height:300px; 
-}
-.about-me-image-after{
-    background-color:blue;
-    background-image:url('../images/test3.png');
-        min-height:300px; 
+    min-height:250px; 
 }
 
 .tagline-container{
@@ -31,10 +18,11 @@
 }
 
 .text{
-    font-size:small;
+    font-size:medium;
     font-family: 'Raleway', serif;
 }
 
 .content-container{
     height:100%;
+    background-color: white;
 }
