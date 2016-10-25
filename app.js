@@ -24,11 +24,11 @@ portfolioApp.config(['$routeProvider',function($routeProvider){
 
 portfolioApp.config(function($mdThemingProvider) {
   $mdThemingProvider
-    .theme('autumn','default')
-    .primaryPalette('amber')
-    .accentPalette('brown')
+    .theme('default')
+    .primaryPalette('indigo')
+    .accentPalette('indigo')
     .warnPalette('red')
-    .backgroundPalette('grey');
+    .backgroundPalette('brown');
 });
 
 portfolioApp.directive('header', function () {
