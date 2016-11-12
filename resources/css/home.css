@@ -1,20 +1,48 @@
-.bio-image{
-    background-image:url('../images/test.png');
-    min-height:250px; 
+
+.page-container{
+    position: relative;
+    z-index:1;
 }
 
-.tagline-container{
-    height:100%;
+.page-content{
+        max-width:75%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        position:absolute;
+        z-index: 3;
+        top:30%;
+}
+
+.section-card{
+   background-color: #abafb8;
+}
+
+.page-image{
+        position:relative;
+        z-index: 2;
+        background-image:url('../images/hexagons.jpg');
+        padding-top: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain
 }
 
 .title{
     font-size:xx-large;
-    font-family: 'Taviraj', serif;
+    font-family: 'Raleway', serif;
+
 }
 
 .subtitle{
-    font-size:small;
-    font-family: 'Taviraj', serif;
+    font-size:x-large;
+    font-family: 'Raleway', serif;
+}
+
+.section-title{
+    font-size:large;
+    font-family: 'Raleway', serif;
 }
 
 .text{
@@ -22,7 +50,19 @@
     font-family: 'Raleway', serif;
 }
 
-.content-container{
-    height:100%;
-    background-color: white;
+.summary-container{
+    padding-top:3%;
+     padding-bottom:3%;
+}
+
+.summary{
+    background-color: #abafb8;
+}
+
+.summary-text{
+    font-size:medium;
+    font-family: 'Raleway', serif;
+}
+.summary-icon{
+    color:#3d52c3;
 }
