@@ -1,32 +1,33 @@
 
-.page-container{
-    position: relative;
-    z-index:1;
+.page-image{
+               background-image:url('../images/hexagons.jpg');
+               background-repeat: no-repeat;
+               background-size: contain;
+               margin-left: auto;
+               margin-right: auto;
+               width: 100%;
+               background-color: #dadde4;
 }
 
 .page-content{
-        max-width:75%;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        position:absolute;
-        z-index: 3;
-        top:30%;
+    margin: 0 auto;
+    padding-top:30%;
 }
+
+
+
+
+@media (min-width:863px){
+    .page-content{
+        max-width:75%;
+    }
+}
+
+
+
 
 .section-card{
-   background-color: #abafb8;
-}
-
-.page-image{
-        position:relative;
-        z-index: 2;
-        background-image:url('../images/hexagons.jpg');
-        padding-top: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: contain
+   background-color: #dfdce2;
 }
 
 .title{
@@ -53,10 +54,12 @@
 .summary-container{
     padding-top:3%;
      padding-bottom:3%;
+
 }
 
 .summary{
-    background-color: #abafb8;
+    background-color: #dfdce2;
+    height:20vh
 }
 
 .summary-text{
@@ -65,4 +68,6 @@
 }
 .summary-icon{
     color:#3d52c3;
+    height:50%;
+        width: 50%;
 }

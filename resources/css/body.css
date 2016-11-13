@@ -4,7 +4,10 @@ html,body{
 
 .app-container{
     height:100%;
+     z-index:1;
+     position:relative;
 }
+
 
 @media (min-width:769px){
     .app-container{
@@ -12,6 +15,7 @@ html,body{
         margin:0 auto;
     }
 }
+
 
 .content-container{
     height:100%
