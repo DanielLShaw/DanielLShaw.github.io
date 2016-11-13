@@ -13,6 +13,16 @@ var controller = app.controller('creditsController',['$scope',function($scope){
          url:'http://www.flaticon.com/authors/plainicon',
          text:'LinkedIn SVG',
          owner: 'Plainicon'
+     },
+    {
+         url:'http://www.flaticon.com/authors/madebyoliver',
+         text:'Search Icon SVG',
+         owner: 'Madebyoliver'
+     },
+         {
+         url:'http://www.flaticon.com/authors/freepik',
+         text:'University and Bank Icon SVG',
+         owner: 'Freepik'
      }
  ]
 }])
