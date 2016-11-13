@@ -34,7 +34,6 @@ portfolioApp.config(function($mdThemingProvider) {
 portfolioApp.directive('header', function () {
     return {
         restrict: 'A',
-        replace: true,
          scope:true,
         templateUrl: "./common/header.html",
         controller: 'headerController'
@@ -44,7 +43,6 @@ portfolioApp.directive('header', function () {
 portfolioApp.directive('footer', function () {
     return {
         restrict: 'A',
-        replace: true,
         scope:true,
         templateUrl: "./common/footer.html",
         controller: 'footerController'
