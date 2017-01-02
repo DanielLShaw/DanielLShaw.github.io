@@ -3,6 +3,8 @@ var app = angular.module('portfolioApp')
 var controller = app.controller('footerController',['$scope',function($scope){
  console.log('LOADED: footerController');
 
+ $scope.date = new Date();
+
  $scope.links = [
      {
          url:'https://www.linkedin.com/in/daniellshaw',
