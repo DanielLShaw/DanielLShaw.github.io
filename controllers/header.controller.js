@@ -7,15 +7,15 @@ var controller = app.controller('headerController',['$scope',function($scope){
 
  $scope.links = [
      {
-         url:'#home',
+         url:'home',
          text:'Home'
      },
         {
-         url:'#projects',
+         url:'projects',
          text:'Projects'
      },
         {
-         url:'#contact',
+         url:'contact',
          text:'Contact'
      }
  ]

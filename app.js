@@ -1,6 +1,6 @@
 var portfolioApp = angular.module('portfolioApp',['ngRoute','ngMaterial']);
 
-portfolioApp.config(['$routeProvider',function($routeProvider){
+portfolioApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
   $routeProvider
     .when('/home',{
       templateUrl:"pages/home/home.html",
@@ -19,7 +19,11 @@ portfolioApp.config(['$routeProvider',function($routeProvider){
       controller:"creditsController"
     })
     .otherwise({redirectTo: '/home'});
+
+    // use the HTML5 History API
+        $locationProvider.html5Mode(true);
 }
+
 ]);
 
 portfolioApp.config(function($mdThemingProvider) {
