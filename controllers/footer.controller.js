@@ -4,6 +4,7 @@ var controller = app.controller('footerController',['$scope',function($scope){
  console.log('LOADED: footerController');
 
  $scope.date = new Date();
+ $scope.creditsUrl = '#!/credits'
 
  $scope.links = [
      {
