@@ -1,0 +1,29 @@
+
+  <md-content hide-xs show-gt-xs layout>
+    <div layout layout-align='start center' flex='45'>
+      <div ng-repeat='link in links'>
+        <md-button class="md-icon-button footer-link" href="{{link.url}}" target="_blank">
+          <md-icon class='md-accent' md-svg-src="{{link.icon}}" aria-label="{{link.text}}">{{link.text}}</md-icon>
+        </md-button>
+      </div>
+    </div>
+    <div layout='column' layout-align='center center' flex='10'>
+      <span class='footer-text date'>2016</span>
+    </div>
+    <div layout='column' layout-align='center end' flex='45'>
+      <span class='footer-text created'>Site created by Daniel Shaw</span>
+      <a class='footer-text credits' href='#/credits'>Credits for images used here</a>
+    </div>
+  </md-content>
+  <md-content hide show-xs>
+    <div layout layout-align='center center' >
+      <div ng-repeat='link in links'>
+        <md-button class="md-icon-button footer-link" href="{{link.url}}" target="_blank">
+          <md-icon class='md-primary' md-svg-src="{{link.icon}}" aria-label="{{link.text}}">{{link.text}}</md-icon>
+        </md-button>
+      </div>
+    </div>
+    <div layout='column' layout-align='center center'>
+      <span class='footer-text created'>Site created by Daniel Shaw</span>
+    </div>
+  </md-content>

@@ -1,13 +1,12 @@
 {
   "name": "daniellshaw.github.io",
-  "description": "Repo behind personal website",
-  "main": "index.js",
+  "description": "Portfolio Website",
+  "main": "app.js",
   "authors": [
     "Daniel Shaw"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/DanielLShaw/DanielLShaw.github.io",
-  "private": true,
+  "homepage": "dlshaw.co.uk",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,7 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.5",
-    "bootstrap": "^3.3.6"
+    "angular-animate": "^1.6.1",
+    "angular-material": "^1.1.1",
+    "angular-aria": "^1.6.1",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "express": "^4.14.0"
   }
 }

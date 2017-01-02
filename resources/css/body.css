@@ -1,0 +1,41 @@
+html,body{
+    height:100%;
+}
+
+.app-container{
+    height:100%;
+     z-index:1;
+     position:relative;
+}
+
+
+@media (min-width:769px){
+    .app-container{
+        max-width:75%;
+        margin:0 auto;
+    }
+}
+
+
+.content-container{
+    height:100%
+}
+
+.app-contents {
+  flex: 1;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

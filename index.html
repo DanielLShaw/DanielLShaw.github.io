@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Grumpy Llama</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-      <link href="resources/css/footer.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Web design portfolio">
+        <meta name="author" content="Daniel Shaw">
 
 
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+        <link rel="stylesheet" href="resources/css/body.css">
+        <link rel="stylesheet" href="resources/css/header.css">
+        <link rel="stylesheet" href="resources/css/footer.css">
+  
 
-    <!-- jQuery -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+        <!--ICONS-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
 
-    <script src="app.module.js"></script>
-    <script src="apps/home/homeController.js"></script>
-    <script src="apps/mim/mimController.js"></script>
+        <link rel="icon" href="resources/images/icons/favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <title>Daniel Shaw - Portfolio</title>
+    </head>
 
-</head>
+        <body>
+            <div ng-app="portfolioApp" class='app app-container'>
+                <header header></header>
+                <main ng-view  class='app-contents'></main>
+                <footer  footer></footer>
+            </div>
 
-<body ng-app="homeApp">
+        <script type="text/javascript" src='bower_components/angular/angular.js'></script>
+        <script type="text/javascript" src='bower_components/angular-route/angular-route.js'></script>
+        <script type="text/javascript" src="bower_components/angular-material/angular-material.js"></script>
+        <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+        <script type="text/javascript" src="bower_components/angular-aria/angular-aria.js"></script>
 
-      <div ng-view></div>
-
-</body>
-
+        <script type="text/javascript" src='app.js'></script>
+        
+        <script type="text/javascript" src='controllers/header.controller.js'></script>
+        <script type="text/javascript" src='controllers/footer.controller.js'></script>
+        <script type="text/javascript" src='controllers/home.controller.js'></script>
+        <script type="text/javascript" src='controllers/contact.controller.js'></script>
+        <script type="text/javascript" src='controllers/projects.controller.js'></script>
+        <script type="text/javascript" src='controllers/credits.controller.js'></script>
+ 
+    </body>
 </html>

@@ -1,0 +1,25 @@
+<div class='header-container' >
+  <md-content hide-xs show-gt-xs>
+      <md-nav-bar nav-bar-aria-label="Pages"> 
+        <md-nav-item  ng-repeat="link in links" md-nav-href="{{link.url}}" name="{{link.text}}">{{link.text}}</md-nav-item>
+      </md-nav-bar>
+  </md-content>
+  <md-content hide show-xs>
+      <md-toolbar class='md-primary'>
+        <div class="md-toolbar-tools"  >
+          <h2 >Daniel Shaw</h2>
+          <span flex></span>
+            <md-button class="md-icon-button" ng-class="showMobileMenu?'md-accent':''"  aria-label="Menu" ng-click="showMobileMenu=!showMobileMenu" >
+              <md-icon>menu</md-icon>
+            </md-button>
+        </div>
+      </md-toolbar>
+      <div class='md-primary'>
+        <md-list ng-show="showMobileMenu" layout='column' layout-align='center center'>
+          <md-list-item ng-repeat="link in links">
+            <md-button  class='md-accent' ng-href="{{link.url}}">{{link.text}}</md-button>
+          </md-list-item>
+        </md-list>
+      </div>
+  </md-content>
+</div>
