@@ -1,0 +1,25 @@
+{
+  "name": "daniellshaw.github.io",
+  "description": "Portfolio Website",
+  "main": "app.js",
+  "authors": [
+    "Daniel Shaw"
+  ],
+  "license": "ISC",
+  "homepage": "dlshaw.co.uk",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.6.1",
+    "angular-material": "^1.1.1",
+    "angular-aria": "^1.6.1",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "express": "^4.14.0"
+  }
+}
