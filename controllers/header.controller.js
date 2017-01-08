@@ -9,14 +9,6 @@ var controller = app.controller('headerController',['$scope',function($scope){
      {
          url:'#!/home',
          text:'Home'
-     },
-        {
-         url:'#!/projects',
-         text:'Projects'
-     },
-        {
-         url:'#!/contact',
-         text:'Contact'
      }
  ]
 }])
