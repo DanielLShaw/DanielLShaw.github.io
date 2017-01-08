@@ -20,9 +20,9 @@ var controller = app.controller('creditsController',['$scope',function($scope){
          owner: 'Madebyoliver'
      },
          {
-         url:'http://www.flaticon.com/authors/freepik',
-         text:'University and Bank Icon SVG',
-         owner: 'Freepik'
+         url:'http://www.flaticon.com/packs/seo-and-development-7',
+         text:'Seo and development icons',
+         owner: 'Maxim Basinski'
      }
  ]
 }])
